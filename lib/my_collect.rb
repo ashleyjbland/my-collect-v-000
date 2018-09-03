@@ -6,15 +6,14 @@ def my_collect(languages)
   counter = 0
   upcase_collection = [ ]
   while languages.length < counter
-    upcase_collection << yield(languages)
+    upcase_collection << yield(languages[counter])
     counter += 1
   end
   upcase_collection
 end
 
-my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |language|
-  language.upcase
-end
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|language| language.upcase} 
+
 binding.pry
 
 students = ['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']
