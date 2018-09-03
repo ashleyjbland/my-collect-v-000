@@ -12,9 +12,9 @@ def my_collect(languages)
   upcase_collection
 end
 
-my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|language| language.upcase} 
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|language| language.upcase}
 
-binding.pry
+#binding.pry
 
 students = ['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']
 
