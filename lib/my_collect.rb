@@ -21,7 +21,7 @@ students = ['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']
 def my_collect(students)
   counter = 0
   first_names = []
-  while students.length < counter
+  while counter < students.length
     first_names << yield(students[counter])
     counter += 1
   end
