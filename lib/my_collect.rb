@@ -1,3 +1,5 @@
+require 'pry'
+
 languages = ['ruby', 'javascript', 'python', 'objective-c']
 
 def my_collect(languages)
@@ -13,3 +15,4 @@ end
 my_collect(languages) do |lang|
   lang.upcase
 end
+binding.pry
