@@ -15,6 +15,7 @@ end
 my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |language|
   language.upcase
 end
+binding.pry
 
 students = ['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']
 
