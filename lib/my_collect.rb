@@ -6,10 +6,9 @@ def my_collect(languages)
   counter = 0
   upcase_collection = []
   while languages.length < counter
-    upcase_collection << yield(languages, lang)
+    upcase_collection << yield(languages[lang])
     counter += 1
   end
-  binding.pry
   upcase_collection
 end
 
