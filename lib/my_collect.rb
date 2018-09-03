@@ -28,6 +28,6 @@ def my_collect(students)
   first_names
 end
 
-my_collect(students) do |student|
+my_collect(['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']) do |student|
   student.split(" ").first
 end
