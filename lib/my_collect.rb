@@ -1,7 +1,5 @@
 require 'pry'
 
-languages = ['ruby', 'javascript', 'python', 'objective-c']
-
 def my_collect(languages)
   counter = 0
   upcase_collection = [ ]
@@ -12,7 +10,9 @@ def my_collect(languages)
   upcase_collection
 end
 
-my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|language| language.upcase}
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |lang|
+  lang.upcase
+end
 
 #binding.pry
 
