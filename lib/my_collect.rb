@@ -12,7 +12,7 @@ def my_collect(languages)
   upcase_collection
 end
 
-my_collect(languages) do |language|
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) do |language|
   language.upcase
 end
 
