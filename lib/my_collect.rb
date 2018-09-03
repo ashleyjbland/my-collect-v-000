@@ -4,7 +4,7 @@ languages = ['ruby', 'javascript', 'python', 'objective-c']
 
 def my_collect(languages)
   counter = 0
-  upcase_collection = []
+  upcase_collection = [ ]
   while languages.length < counter
     upcase_collection << yield(languages)
     counter += 1
