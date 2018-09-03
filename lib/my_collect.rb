@@ -9,10 +9,10 @@ def my_collect(languages)
     upcase_collection << yield(languages, lang)
     counter += 1
   end
+  binding.pry
   upcase_collection
 end
 
 my_collect(languages) do |lang|
   lang.upcase
 end
-binding.pry
